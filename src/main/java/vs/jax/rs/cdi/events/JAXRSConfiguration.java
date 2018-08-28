@@ -1,4 +1,4 @@
-package com.airhacks;
+package vs.jax.rs.cdi.events;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
