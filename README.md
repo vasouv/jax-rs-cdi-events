@@ -1,6 +1,5 @@
-# Build
-mvn clean package && docker build -t vs/jax-rs-cdi-events .
+# JAX-RS-CDI-Events
 
-# RUN
+The project is a playgroung to learn about JAX-RS and CDi events.
 
-docker rm -f jax-rs-cdi-events || true && docker run -d -p 8080:8080 -p 4848:4848 --name jax-rs-cdi-events vs/jax-rs-cdi-events 
+Whenever a new message is created, an event will be fired and stored in a List. The saved events will be output in an endpoint.
