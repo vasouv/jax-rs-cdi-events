@@ -1,0 +1,5 @@
+vs\jax\rs\cdi\events\rest\MessageResource.class
+vs\jax\rs\cdi\events\service\MessageService.class
+vs\jax\rs\cdi\events\JAXRSConfiguration.class
+vs\jax\rs\cdi\events\startup\InitializerBean.class
+vs\jax\rs\cdi\events\entity\Message.class
