@@ -20,6 +20,10 @@ public class MessageService {
         return em.createNamedQuery("Message.findAll").getResultList();
     }
 
+    public Message find(Long id) {
+        return em.find(Message.class, id);
+    }
+
     public void create(Message m) {
         em.persist(m);
     }
