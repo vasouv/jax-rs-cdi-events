@@ -15,3 +15,11 @@ POST: creates new message : { "title" = "whatever" }
 `localhost:8080/jax-rs-cdi-events/resources/messages`
 
 GET: finds all messages that have been created with the POST method
+
+`localhost:8080/jax-rs-cdi-events/resources/messages/<id>`
+
+GET: if message is found return it, otherwise throw exception
+
+`localhost:8080/jax-rs-cdi-events/resources/messages/exception`
+
+GET: always throw NotFoundException
