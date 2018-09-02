@@ -48,12 +48,8 @@ public class MessageResource implements Serializable {
     @GET
     @Path("exception")
     public Response notFound() {
-        Message found = messageService.find(0L);
-        if (found == null) {
-            LOG.warning("Message was not found... Throwing exception");
-            throw new NotFoundException("Message was not found... Check the ID");
-        }
-        return Response.ok(found).build();
+        LOG.warning("Throwing exception...");
+        throw new NotFoundException("Message was not found... Check the ID");
     }
 
     @POST
