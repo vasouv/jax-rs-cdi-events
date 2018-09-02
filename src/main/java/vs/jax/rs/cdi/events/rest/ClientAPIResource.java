@@ -21,4 +21,9 @@ public class ClientAPIResource {
         return clientAPIExample.fetchTodos();
     }
 
+    @GET
+    public String willShowException() {
+        return clientAPIExample.callsException();
+    }
+
 }
